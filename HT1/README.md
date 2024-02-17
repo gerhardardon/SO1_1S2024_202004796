@@ -9,3 +9,10 @@ usando el framework Wails, el cual se conectará con una aplicación de React y
 mostrará dinámicamente como cambia la información de la memoria RAM, se
 recomienda utilizar librerías de gráficas como Chart.JS, así mismo se recomiendo
 usar la función Command de Golang para recuperar la data.
+
+uso del modulo: 
+- make en carpeta 
+- sudo insmod ram.ko
+- revisar /proc/ram_202004796
+
+notas: secure boot debe estar desactivado

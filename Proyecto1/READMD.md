@@ -1,5 +1,9 @@
 # Plataforma de Monitoreo y Señales a Procesos 🖥️🛰️
 
+## Sistema Operativo 🛠️
+- Ubuntu Server 22.04
+- VirtualBox 
+
 ## Backend Go 📚
 Se escogio fiber y go debido a su rendimiento y facilidad de uso, ademas que lo vuelve una API ligera 
 
@@ -116,4 +120,23 @@ Ademas Docker Compose es una herramienta que simplifica la gestión de aplicacio
     docker-compose stop: Detiene los contenedores definidos en el archivo docker-compose.yml.
     docker-compose ps: Muestra el estado de los contenedores definidos en el archivo docker-compose.yml.
     docker-compose logs: Muestra los logs de los contenedores definidos en el archivo docker-compose.yml.
+```
+
+## NGINX 🔧
+NGINX es un servidor web y proxy inverso de alto rendimiento que se utiliza comúnmente para servir contenido estático, balanceo de carga, proxying y como servidor de caché. Se puede utilizar de varias maneras, como:
+
+    Servir sitios web estáticos: NGINX puede servir archivos estáticos como HTML, CSS, JavaScript, imágenes, etc. Simplemente configura NGINX para apuntar al directorio raíz donde se encuentran los archivos y los servirá a los clientes que soliciten esos recursos.
+
+    Proxy inverso: NGINX se puede configurar como un proxy inverso que redirige las solicitudes a diferentes servidores basándose en ciertos criterios, como la URL o el nombre de host. Esto es útil para equilibrar la carga entre varios servidores backend o para ocultar la infraestructura de backend a los clientes.
+
+    Servidor de caché: NGINX puede actuar como un servidor de caché, almacenando en caché las respuestas de los servidores backend para servirlas rápidamente a los clientes. Esto reduce la carga en los servidores backend y mejora el rendimiento del sitio web.
+
+```
+nginx: Inicia el servidor NGINX. 
+
+nginx -s stop: Detiene el servidor NGINX de manera segura.
+
+nginx -s reload: Recarga la configuración del servidor NGINX sin detenerlo, lo que permite aplicar cambios en la configuración sin interrumpir el servicio.
+
+nginx -t: Prueba la configuración de NGINX en busca de errores de sintaxis antes de aplicarla.
 ```

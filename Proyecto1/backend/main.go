@@ -10,12 +10,19 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 func main() {
 
 	//Crear nuestra aplicación de Fiber
 	app := fiber.New()
+
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: "*",
+		AllowMethods: "GET,POST,PUT,DELETE",
+		AllowHeaders: "Content-Type, Authorization",
+	}))
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World 👋!")
@@ -39,7 +46,12 @@ func main() {
 		}
 
 		tree := proctree.GetProc(parametro1Int)
-		return c.SendString("procesos " + tree)
+		return c.SendString(tree)
+	})
+
+	app.Get("/api/proclist", func(c *fiber.Ctx) error {
+
+		return c.SendString(proctree.GetProcList())
 	})
 
 	log.Fatal(app.Listen(":3000"))

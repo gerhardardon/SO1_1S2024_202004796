@@ -58,12 +58,12 @@ func GetProc(pid int) string {
 			fmt.Println(proc.Pid, proc.Name)
 			if len(proc.Child) > 0 {
 				for _, child := range proc.Child {
-					tree += fmt.Sprintf("\"%d \\n %s\"\n", proc.Pid, proc.Name)
+					tree += fmt.Sprintf("\"%d  %s\"\n", proc.Pid, proc.Name)
 					tree += fmt.Sprintf("-> \"%d %s \"\n", child.Pid, child.Name)
 					fmt.Println("  ", child.Pid, child.Name)
 				}
 			} else {
-				tree += fmt.Sprintf("%d \n %s", proc.Pid, proc.Name)
+				tree += fmt.Sprintf("\"%d  %s\"", proc.Pid, proc.Name)
 			}
 		}
 	}
@@ -73,5 +73,30 @@ func GetProc(pid int) string {
 	}
 	tree += "}"
 	return tree
+}
 
+func GetProcList() string {
+	data, err := os.ReadFile("/proc/procesos")
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return "err"
+	}
+	procJson := "{" + string(data)
+
+	var procList string
+	var info Info
+	err = json.Unmarshal([]byte(procJson), &info)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, proc := range info.Processes {
+		procList += fmt.Sprintf("%d\n", proc.Pid)
+		if len(proc.Child) > 0 {
+			for _, child := range proc.Child {
+				procList += fmt.Sprintf("%d\n", child.Pid)
+			}
+		}
+	}
+	return procList
 }

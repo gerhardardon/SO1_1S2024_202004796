@@ -24,10 +24,10 @@ func connectWithConnector() (*sql.DB, error) {
 	// Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
 	// keep passwords and other secrets safe.
 	var (
-		dbUser                 = "root"                             // e.g. 'my-db-user'
-		dbPwd                  = "gerhard556"                       // e.g. 'my-db-password'
-		dbName                 = "bandas"                           // e.g. 'my-database'
-		instanceConnectionName = "tarea-redis:us-central1:cloud-db" // e.g. 'project:region:instance'
+		dbUser                 = " "                             // e.g. 'my-db-user'
+		dbPwd                  = " "                       // e.g. 'my-db-password'
+		dbName                 = " "                           // e.g. 'my-database'
+		instanceConnectionName = " " // e.g. 'project:region:instance'
 		usePrivate             = ""
 	)
 

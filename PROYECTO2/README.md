@@ -19,9 +19,9 @@ para enviar datos a una base de datos en Redis; estos datos se verán en dashboa
 
 También se tiene una base de datos de Mongodb para guardar los logs, los cuales serán
 
-consultados por medio de una aplicación web.
+consultados por medio de una aplicación web. 
 
-  
+Para una mayor descrimpcion visitar el enunciado del proyecto en este repositorio "[SO1]PROYECTO1_1S2024.pdf"
 
 ## Objetivos 📗
 
@@ -42,6 +42,12 @@ consultados por medio de una aplicación web.
 ### Google Cloud Platform 🧪 
 - Kube Engine para el cluster de kubernetes
 - Cloud Run para el frontend y backend de la aplicacion
+
+#### Frontend 
+- vue
+
+#### Backend
+- node js 
 
 ### K8S 💻
 ![enter image description here](https://kubernetes.io/images/docs/Container_Evolution.svg)

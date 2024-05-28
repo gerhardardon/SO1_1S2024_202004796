@@ -1,4 +1,17 @@
 # Plataforma de Monitoreo y Señales a Procesos 🖥️🛰️
+Objetivos
+● Conocer el Kernel de Linux mediante módulos de C.
+● Hacer uso de programación asíncrona con rutinas de Golang.
+● Comprender el funcionamiento de los contenedores usando Docker.
+
+Introducción
+En este proyecto, se tiene como objetivo principal implementar un sistema de monitoreo de
+recursos del sistema y gestión de procesos, empleando varias tecnologías y lenguajes de
+programación. El sistema resultante permitirá obtener información clave sobre el rendimiento del
+computador, procesos en ejecución y su administración a través de una interfaz amigable.
+
+Para mas informacion leer "[SO1]PROYECTO1_1S2024.pdf" 
+
 
 ## Sistema Operativo 🛠️
 - Ubuntu Server 22.04

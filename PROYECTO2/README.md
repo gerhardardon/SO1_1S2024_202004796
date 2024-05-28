@@ -39,6 +39,10 @@ consultados por medio de una aplicación web.
 
 ## Tenologias usadas 📘
 
+### Google Cloud Platform 🧪 
+- Kube Engine para el cluster de kubernetes
+- Cloud Run para el frontend y backend de la aplicacion
+
 ### K8S 💻
 ![enter image description here](https://kubernetes.io/images/docs/Container_Evolution.svg)
 Kubernetes es una plataforma de código abierto para gestionar y orquestar contenedores, proporcionando herramientas para desplegar, escalar y gestionar aplicaciones de manera eficiente y automatizada en cualquier entorno de infraestructura. Ofrece características como escalabilidad automática, autoreparación, despliegues sin tiempo de inactividad y gestión de recursos, facilitando el desarrollo y la operación de aplicaciones en contenedores a gran escala.

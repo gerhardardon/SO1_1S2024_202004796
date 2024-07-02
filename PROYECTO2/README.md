@@ -11,7 +11,7 @@ En este proyecto, se tiene como objetivo principal implementar un sistema de vot
 
 concurso de bandas de música guatemalteca; el propósito de este es enviar tráfico por medio de
 
-archivos con votaciones creadas hacia distintos servicios (grpc y wasm) que van a encolar cada uno
+archivos con votaciones creadas hacia distintos servicios (grpc) que van a encolar cada uno
 
 de los datos enviados, así mismo se tendrán ciertos consumidores a la escucha del sistema de colas
 

@@ -21,7 +21,7 @@ También se tiene una base de datos de Mongodb para guardar los logs, los cuales
 
 consultados por medio de una aplicación web. 
 
-Para una mayor descrimpcion visitar el enunciado del proyecto en este repositorio "[SO1]PROYECTO1_1S2024.pdf"
+Para una mayor descripcion visitar el enunciado del proyecto en este repositorio "[SO1]PROYECTO2_1S2024.pdf"
 
 ## Objetivos 📗
 
